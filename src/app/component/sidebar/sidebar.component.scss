@@ -1,0 +1,69 @@
+$sidebar-background: #165c7d;
+$text-color: #FFFFFF;
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 24px;
+  color: $text-color;
+  background-color: $sidebar-background;
+  height: 100%;
+  width: 100px;
+ 
+
+  .logo {
+    width: 80px;
+    height: 80px;
+    background-image: url(./assets/ailos-logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .menu {
+    width: 24px;
+    height: 24px;
+    background-image: url(./assets/menu.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 24px 0 24px;
+  }
+  .search {
+    width: 24px;
+    height: 24px;
+    background-image: url(./assets/magnifying-glass.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 24px;
+  }
+  .star {
+    width: 24px;
+    height: 24px;
+    background-image: url(./assets/star.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 24px;
+  }
+  .message-dots {
+    width: 24px;
+    height: 24px;
+    background-image: url(./assets/message-dots.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 24px;
+  }
+  .abacus {
+    width: 24px;
+    height: 24px;
+    background-image: url(./assets/abacus.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 24px;
+  }
+  .greek-building {
+    width: 24px;
+    height: 24px;
+    background-image: url(./assets/ancient-greek.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
