@@ -1,0 +1,16 @@
+$footer-background: #FFFFFF;
+
+.footer {
+  display: flex;
+  align-items: center;
+  background-color: $footer-background;
+  height: 78px;
+
+  .first-button {
+    margin-left: 24px;
+  }
+
+  .last-button {
+    margin-left: 16px;    
+  }
+}
