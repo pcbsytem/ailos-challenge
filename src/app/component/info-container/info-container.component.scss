@@ -1,0 +1,26 @@
+$label-color: #889499;
+
+.info-container {
+  display: flex;
+
+  .icon-container {
+    padding-right: 24px;
+    align-self: center;
+  }
+
+  .text-container {
+    p {
+      margin: 0;
+      font-weight: 400;
+      font-size: 0.6875rem;
+      line-height: 0.93625rem;
+      color: $label-color;
+    }
+
+    span {
+      font-weight: 400;
+      font-size: 0.875rem;
+      line-height: 1.191875rem;
+    }
+  }
+}
