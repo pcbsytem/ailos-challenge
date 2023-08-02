@@ -1,7 +1,9 @@
 $label-color: #889499;
+$span-color: #165C7D;
 
 .info-container {
   display: flex;
+  min-width: 270px;
 
   .icon-container {
     padding-right: 24px;
@@ -23,4 +25,7 @@ $label-color: #889499;
       line-height: 1.191875rem;
     }
   }
+}
+.button {
+  color: #165C7D;
 }

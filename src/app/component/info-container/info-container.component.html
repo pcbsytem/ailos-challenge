@@ -1,9 +1,12 @@
 <div class="info-container">
   <div class="icon-container">
-    <i class="{{ iconName }}" [ngStyle]="{ color: color }"></i>
+    <i class="{{ iconName }}" [ngStyle]="{ color: color }" *ngIf="iconName"></i>
   </div>
-  <div class="text-container">
+  <div class="text-container" *ngIf="label || description">
     <p>{{ label }}</p>
     <span>{{ description }}</span>
   </div>
 </div>
+<button class="button" mat-button color="primary" *ngIf="button">
+  {{ button }}
+</button>

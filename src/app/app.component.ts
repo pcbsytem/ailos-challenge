@@ -1,6 +1,20 @@
 import { Component } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
 
+interface ResultItem {
+  iconName?: string,
+  label?: string,
+  description?: string,
+  color?: string,
+  button?: string,
+}
+
+interface Result {
+  title: string,
+  subTitle: string,
+  list: ResultItem[]
+}
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -30,6 +44,57 @@ export class AppComponent {
       { label: 'Admissão' },
     ]
   }
+  resultInformation: Result[] = [
+    {
+      title: 'Situação cadastral do CPF',
+      subTitle: 'Consulta na Receita Federal',
+      list: [
+        {
+          iconName: 'fa-solid fa-user',
+          label: 'Nome',
+          description: 'Mariane de Sousa Oliveira',
+          color: '#889499',
+        },
+        {
+          iconName: 'fa-regular fa-circle-check',
+          label: 'Situação do CPF',
+          description: 'Regular',
+          color: '#00c246',
+        }
+      ],
+
+    },
+    {
+      title: 'Conta Aplicação',
+      subTitle: 'Cooperativa Viacredi',
+      list: [
+        {
+          iconName: 'fa-regular fa-credit-card',
+          label: 'Número da conta',
+          description: '557932-4',
+          color: '#889499',
+        },
+        {
+          button: 'Duplicar conta'
+        }
+      ],
+    },
+    {
+      title: 'Conta corrente',
+      subTitle: 'Cooperativa Viacredi',
+      list: [
+        {
+          iconName: 'fa-regular fa-credit-card',
+          label: 'Número da conta',
+          description: '778461-8',
+          color: '#889499',
+        },
+        {
+          button: 'Duplicar conta'
+        }
+      ],
+    },
+  ]
 
   constructor(
     private formBuilder: FormBuilder,

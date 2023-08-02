@@ -24,26 +24,30 @@
       </form>
       <br />
       <br />
-      <app-card *ngIf="checkIfDocumentIsValid">
-        <h4>Situação cadastral do CPF</h4>
-        <p class="subtitle">Consulta na Receita Federal</p>
 
-        <app-info-container
-          iconName="fa-solid fa-user"
-          label="Nome"
-          description="Mariane de Sousa Oliveira"
-          color="#889499"
-        />
+      <div class="card-list" *ngIf="checkIfDocumentIsValid">
+        <app-card
+          *ngFor="
+            let item of resultInformation;
+            let last = last;
+            let first = first
+          "
+          [ngClass]="!first && !last ? 'middle-card' : ''"
+        >
+          <h4>{{ item.title }}</h4>
+          <p class="subtitle">{{ item.subTitle }}</p>
 
-        <br />
-
-        <app-info-container
-          iconName="fa-regular fa-circle-check"
-          label="Situação do CPF"
-          description="Regular"
-          color="#00c246"
-        />
-      </app-card>
+          <div *ngFor="let subItem of item.list">
+            <app-info-container
+              [iconName]="subItem?.iconName"
+              [label]="subItem?.label"
+              [description]="subItem?.description"
+              [button]="subItem?.button"
+              [color]="subItem?.color"
+            />
+          </div>
+        </app-card>
+      </div>
 
       <app-card
         *ngIf="!checkIfDocumentIsValid && checkIfDocumentIsValid !== undefined"
