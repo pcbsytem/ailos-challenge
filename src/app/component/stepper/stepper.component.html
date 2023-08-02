@@ -1,0 +1,20 @@
+<div class="stepper">
+  <div
+    class="stepper-item"
+    *ngFor="
+      let item of data?.list;
+      let index = index;
+      let first = first;
+      let last = last
+    "
+  >
+    <div>
+      <div [ngClass]="first ? 'line-invisible' : 'line'"></div>
+      <div [ngClass]="data.current === index ? 'ball' : 'ball-filled'"></div>
+      <div [ngClass]="last ? 'line-invisible' : 'line'"></div>
+    </div>
+    <label [ngClass]="data.current === index ? 'label-current' : 'label'">{{
+      item.label
+    }}</label>
+  </div>
+</div>
