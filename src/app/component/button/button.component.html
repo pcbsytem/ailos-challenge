@@ -1,0 +1,9 @@
+<button
+  class="app-button"
+  [ngClass]="type"
+  mat-flat-button
+  color="primary"
+  [ngStyle]="{ height: size === 'large' ? '48px' : '34px' }"
+>
+  <ng-content></ng-content>
+</button>

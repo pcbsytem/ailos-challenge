@@ -1,0 +1,16 @@
+$primary-color: #165c7d;
+$stroked-color: #FFFFFF;
+
+.app-button {
+  height: 34px; 
+  font-size: 14px; 
+  font-weight: 600;
+  border-radius: 2px;
+  background-color: $primary-color !important;
+}
+
+.stroked {
+  color: $primary-color !important;
+  border: 1px solid $primary-color !important;
+  background-color: $stroked-color !important;
+}
