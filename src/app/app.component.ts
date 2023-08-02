@@ -12,6 +12,15 @@ export class AppComponent {
   checkoutForm = this.formBuilder.group({
     cpf: '',
   });
+  notificationList = [
+    'Teste',
+    'teste',
+    'teste',
+    'teste',
+    'teste',
+    'teste',
+    'teste',
+  ];
   stepper = {
     current: 0,
     list: [

@@ -1,7 +1,7 @@
 <div class="container">
   <app-sidebar></app-sidebar>
   <main class="main">
-    <app-toolbar></app-toolbar>
+    <app-toolbar [notification]="notificationList"></app-toolbar>
     <section class="content">
       <app-stepper [data]="stepper" />
       <br />
