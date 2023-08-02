@@ -6,7 +6,7 @@ This project is a challenge that you can search information about a specific CPF
 
 ## URL
 
-<a href="">Click here</a>
+<a href="https://ailos-challenge-rust.vercel.app">Click here</a>
 
 ## How to run
 
